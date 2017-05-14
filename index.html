@@ -22,8 +22,16 @@
 </head>
 <body>
 	<header>
+		<div class="mob_header clearfix visible-xs visible-sm">
+			<div class="mob_logo">
+				<img src="img/mob_logo.png" alt="alt">
+			</div>
+			<div class="mob_mnu">
+				<img src="img/mob_mnu.png" alt="alt">
+			</div>
+		</div>
 		<div class="container">
-			<div class="row">
+			<div class="row hidden-xs hidden-sm">
 				<div class="col-md-2">
 					<div class="logo">
 						<img src="img/logo.png" alt="alt">
@@ -57,10 +65,33 @@
 					</div>
 				</div>
 			</div>
-			<div class="row">
+			<div class="row visible-xs visible-sm">
+				<div class="col-md-6">
+					<div class="mob_title">
+						Medical marijuana delivered to your door.
+						<p>Sign up now and get your first 1/8th oz delivered for free in as little as 10 minutes.</p>
+						<div class="reg">
+							<div class="row">
+								<div class="col-md-6">
+									<form>
+										<div class="form-group">
+											<input class="form-control" type="" name="Zip Code" placeholder="Zip Code">
+										</div>
+									</form>
+								</div>
+								<div class="col-md-6">
+									<button class="btn-block" type="">Available in your area?</button>
+								</div>
+							</div>
+						</div>
+						<p style="font-size: 16px;">Already have an account? <span style="color: #4dccdb;">Login</span></p>
+					</div>
+				</div>
+			</div>
+			<div class="row hidden-xs hidden-sm">
 				<div class="col-md-6">
 					<div class="title">
-						<h1>Medical marijuana delivered to your door.</h1>
+						Medical marijuana delivered to your door.
 						<p>Sign up now and get your first 1/8th oz delivered <br>for free in as little as 10 minutes.</p>
 						<div class="reg">
 							<div class="row">
@@ -88,28 +119,52 @@
 		</div>
 	</header>
 	<main>
-		<div style="border-bottom: 2px solid #cccccc;">
+		<div style="border-bottom: 1px solid #cccccc;" class="visible-xs visible-sm">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-3">
-						<div class="sponsor1"></div>
+					<div class="col-xs-3">
+						<div class="mob_sponsor sponsor1"></div>
 					</div>
-					<div class="col-md-3">
-						<div class="sponsor2"></div>
+					<div class="col-xs-3">
+						<div class="mob_sponsor sponsor2"></div>
 					</div>
-					<div class="col-md-2">
-						<div class="sponsor3"></div>
+					<div class="col-xs-2">
+						<div class="mob_sponsor sponsor3"></div>
 					</div>
-					<div class="col-md-2">
-						<div class="sponsor4"></div>
+					<div class="col-xs-2">
+						<div class="mob_sponsor sponsor4"></div>
 					</div>
-					<div class="col-md-2">
-						<div class="sponsor5"></div>
+					<div class="col-xs-2">
+						<div class="mob_sponsor sponsor5"></div>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class="info">
+		<div style="border-bottom: 1px solid #cccccc;" class="hidden-xs hidden-sm">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3">
+						<div class="sponsor sponsor1"></div>
+					</div>
+					<div class="col-md-3">
+						<div class="sponsor sponsor2"></div>
+					</div>
+					<div class="col-md-2">
+						<div class="sponsor sponsor3"></div>
+					</div>
+					<div class="col-md-2">
+						<div class="sponsor sponsor4"></div>
+					</div>
+					<div class="col-md-2">
+						<div class="sponsor sponsor5"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="info visible-xs visible-sm">
+			Get your medical marijuana delivered easily, quickly, and professionally	
+		</div>
+		<div class="info hidden-xs hidden-sm">
 			Get your medical marijuana delivered <br>easily, quickly, and professionally	
 		</div>
 		<div class="data">
@@ -117,19 +172,19 @@
 				<div class="row">
 					<div class="col-md-1"></div>
 					<div class="col-md-3">
-						<div class="info_ease">
+						<div class="icon info_ease">
 							<p>Ease</p>
 							<span><p>Deliveries usually take less than 20 minutes!</p></span>
 						</div>
 					</div>
 					<div class="col-md-4">
-						<div class="info_safe">
+						<div class="icon info_safe">
 							<p>Safe</p>
 							<span><p>Eaze background-checks and verifies all Drivers (Two-way ratings)</p></span>
 						</div>
 					</div>
 					<div class="col-md-3">
-						<div class="info_professional">
+						<div class="icon info_professional">
 							<p>Professional</p>
 							<span><p>Eaze abides by all medical marijuana state laws</p></span>
 						</div>
@@ -150,7 +205,21 @@
 				<div class="col-md-4">
 					<div class="layer"></div>
 				</div>
-				<div class="col-md-5">
+				<div class="col-md-5 visible-xs visible-sm">
+					<div class="order_info group1">
+						Find the perfect strain
+						<p>Pick from various collectives' selection of high quality strains. Set strain and quantity in just two taps of a finger.</p>
+					</div>
+					<div class="order_info group2">
+						Confirm delivery location
+						<p>Eaze automatically pinpoints your current location and estimates your delivery time. Tap to confirm or enter new address.</p>
+					</div>
+					<div class="order_info group3">
+						Sit back and relax
+						<p>Eaze's extensive dispensary and driver network means faster delivery times. You'll receive message as your order approaches.</p>
+					</div>
+				</div>
+				<div class="col-md-5 hidden-xs hidden-sm">
 					<div class="order_info">
 						Find the perfect strain
 						<p>Pick from various collectives' selection of high quality strains. Set strain and quantity in just two taps of a finger.</p>
@@ -166,14 +235,15 @@
 				Partner with Eaze.
 				<p>Find out how eaze can help your business grow</p>
 			</div>
-			<div style="padding-bottom: 70px">
+			<div class="block">
 				<div class="row">
 					<div class="col-md-6">
 						<div class="drivers">
 							<img src="img/drivers.png" alt="alt">
 							<p>Drivers</p>
 							<span><p>Join one of our Fleet partners <br>and make up to $45/hour.</p></span>
-							<button class="learn" type="">Learn more</button>
+							<button class="learn hidden-xs hidden-sm" type="">Learn more</button>
+							<button class="learn btn-block visible-xs visible-sm" type="">Learn more</button>
 						</div>
 					</div>
 					<div class="col-md-6">
@@ -181,7 +251,8 @@
 							<img src="img/dispensaries.png" alt="alt">
 							<p>Dispensaries</p>
 							<span><p>Increase awareness and gain <br>thousands of new customers.</p></span>
-							<button class="learn" type="">Learn more</button>
+							<button class="learn hidden-xs hidden-sm" type="">Learn more</button>
+							<button class="learn btn-block visible-xs visible-sm" type="">Learn more</button>
 						</div>
 					</div>
 				</div>

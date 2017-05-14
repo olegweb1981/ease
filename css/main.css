@@ -35,6 +35,15 @@ body {
 header {
   background-color: #f3f3f3;
 }
+.mob_header {
+  padding: 20px;
+}
+.mob_logo {
+  float: left;
+}
+.mob_mnu {
+  float: right;
+}
 .logo {
   padding: 22px 0;
 }
@@ -44,6 +53,7 @@ header {
 .list ul {
   text-align: right;
   margin: 0;
+  padding: 0;
 }
 .list li {
   margin-left: 35px;
@@ -58,36 +68,54 @@ header {
   border-radius: 5px;
   padding: 12px 20px;
 }
+.mob_title {
+  background-image: url(../img/mob_header.png);
+  background-repeat: no-repeat;
+  background-position: top 30px center;
+  background-size: contain;
+  text-align: center;
+  padding: 60px 0;
+}
+
 .title {
   padding: 170px 0;
+  font-family: MuseoSansRounded-500-webfont;
+  color: #333333;
+  font-size: 44px;
 }
-.title h1 {
-  font-size: 45px;
+@media (max-width: 991px) {
+  .mob_title {
+    font-size: 30px;
+    font-family: MuseoSansRounded-500-webfont;
+    color: #333333;
+  }
 }
-.title p {
-  color: #797979;
+
+.title p, .mob_title p {
+  color: #666666;
   font-size: 18px;
   font-family: MuseoSansRounded-500-webfont;
   margin: 0;
+  padding-top: 15px;
 }
 .reg {
   padding: 40px 0;
 }
-.title input {
+.title input, .mob_title input {
   color: #666666;
   font-size: 18px;
   font-family: MuseoSansRounded-300-webfont;
-  padding: 30px 20px;
+  padding: 30px 15px;
   border-radius: 5px;
   border: 2px solid #cccccc;
 }
-.title button {
+.title button, .mob_title button {
   color: white;
   background-color: #4dccdb;
   border-radius: 5px;
   font-size: 18px;
   font-family: MuseoSansRounded-500-webfont;
-  padding: 15px 20px;
+  padding: 15px 0;
   font-weight: bold;
   border: solid #4dccdb;
 }
@@ -96,48 +124,53 @@ header {
 }
 .mob_img img {
   position: absolute;
-  left: 90px;
   top: 70px;
+  right: -40px;
 }
 main {
   background-color: white;
   border-bottom: 1px solid #cccccc;
 }
-.sponsor1 {
-  background-image: url(../img/sponsor1.png);
+.sponsor {
   background-repeat: no-repeat;
   background-position: center;
   padding: 80px 0;
+}
+.mob_sponsor {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  padding: 40px 0;
+}
+.sponsor1 {
+  background-image: url(../img/sponsor1.png);
 }
 .sponsor2 {
   background-image: url(../img/sponsor2.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  padding: 80px 0;
 }
 .sponsor3 {
   background-image: url(../img/sponsor3.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  padding: 80px 0;
 }
 .sponsor4 {
   background-image: url(../img/sponsor4.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  padding: 80px 0;
 }
 .sponsor5 {
   background-image: url(../img/sponsor5.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  padding: 80px 0;
 }
 main .info {
   font-size: 28px;
   font-family: MuseoSansRounded-500-webfont;
   text-align: center;
-  padding: 60px 15px;
+  padding: 50px 15px;
+}
+@media (max-width: 991px) {
+  main .info {
+    font-size: 24px;
+    padding: 50px 36px;
+  }
+  .order p {
+    padding-top: 20px;
+  }
 }
 main .data {
   font-size: 22px;
@@ -150,23 +183,29 @@ main .data {
   color: #666666;
   font-family: MuseoSansRounded-300-webfont;
 }
+@media (max-width: 991px) {
+  .data span {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  main .data {
+    font-size: 24px;
+  }
+}
+.icon {
+  background-repeat: no-repeat;
+  background-position: top 20px center;
+  padding-top: 110px;
+}
 .info_ease {
   background-image: url(../img/mine_easy.png);
-  background-repeat: no-repeat;
-  background-position: top center;
-  padding-top: 100px;
 }
 .info_safe {
   background-image: url(../img/mine_safe.png);
-  background-repeat: no-repeat;
-  background-position: top center;
-  padding-top: 100px;
+
 }
 .info_professional {
   background-image: url(../img/mine_professional.png);
-  background-repeat: no-repeat;
-  background-position: top center;
-  padding-top: 100px;
 }
 section {
   background-color: #1b1b1b;
@@ -205,6 +244,22 @@ section .order {
   font-family: MuseoSansRounded-300-webfont;
   color: #999999;
 }
+@media (max-width: 991px) {
+  .order_info {
+    padding: 20px;
+    padding-left: 70px;
+  }
+   .group1, .group2, .group3 {
+    background-position: left top 13px;
+    background-repeat: no-repeat;
+  }
+  .group2 {
+    background-image: url(../img/ellipse2.png);
+  }
+  .group3 {
+    background-image: url(../img/ellipse3.png);
+  }
+}
 .section2 {
   background-color: white;
   min-height: 630px;
@@ -219,12 +274,15 @@ section2 .order {
 section2 .order p {
    color: #666666;
 }
+.block {
+  padding-bottom: 70px;
+}
 .drivers {
   font-size: 24px;
   font-family: MuseoSansRounded-500-webfont;
   text-align: center;
   color: #333333;
-  border-right: 2px solid #999999;
+  border-right: 1px solid #999999;
 }
 .dispensaries {
   font-size: 24px;
@@ -233,7 +291,7 @@ section2 .order p {
   color: #333333;
 }
 .drivers img, .dispensaries img {
-  padding-bottom: 20px;
+  margin: 20px 0;
 }
 .drivers span, .dispensaries span {
   font-size: 20px;
@@ -242,24 +300,34 @@ section2 .order p {
 }
 .learn {
   padding: 10px 20px;
-  font-size: 16px;
+  font-size: 18px;
   font-family: MuseoSansRounded-500-webfont;
   color: #666666;
   background-color: white;
   border-radius: 5px;
   border: 2px solid #cccccc;
-  margin: 10px 0;
+  margin: 20px 0;
+}
+@media (max-width: 991px) {
+  .drivers {
+    border-right: none;
+  }
+  section2 .order {
+    padding: 40px 15px;
+  }
+  .block {
+    padding-bottom: 40px
+  }
+  .learn {
+    font-weight: bold;
+  }
 }
 footer {
   background-color: #f3f3f3;
 }
 .form {
-  font-size: 18px;
-  font-family: MuseoSansRounded-300-webfont;
-  color: #666666;
-  text-align: center;
   padding: 80px 0px 60px;
-  border-bottom: 2px solid #cccccc;
+  border-bottom: 1px solid #cccccc;
 }
 .form input {
   color: #666666;
@@ -267,7 +335,7 @@ footer {
   font-family: MuseoSansRounded-300-webfont;
   padding: 25px 20px;
   border-radius: 5px;
-  border: 2px solid #cccccc;
+  border: 1px solid #cccccc;
 }
 .form button {
   color: white;
@@ -281,6 +349,10 @@ footer {
 }
 .form-text {
   padding: 17px 0;
+  font-size: 18px;
+  font-family: MuseoSansRounded-300-webfont;
+  color: #666666;
+  text-align: center;
 }
 .footer {
   padding: 70px 0;
@@ -305,4 +377,24 @@ footer {
 }
 .social img {
   padding-left: 20px;
+}
+@media (max-width: 991px) {
+  .form {
+    padding: 30px 0px 50px;
+  }
+  .form-text {
+    font-size: 22px;
+  }
+  .footer {
+    padding: 40px 0;
+  }
+  .footer p {
+    font-size: 22px;
+  }
+  .footer li {
+    font-size: 20px;
+  }
+  .footer ul {
+    margin-bottom: 20px;
+  }
 }
