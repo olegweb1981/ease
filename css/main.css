@@ -108,12 +108,22 @@ header {
 }
 @media (max-width: 991px) {
   .title {
-    background-image: url(../img/mob_header.png);
-    background-repeat: no-repeat;
-    background-position: center;
+    z-index: 100;
     text-align: center;
     font-size: 30px;
     padding: 150px 0;
+  }
+  .blur {
+    background-image: url(../img/mob_title.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.2;
+    -webkit-filter: blur(4px);
   }
   .title p {
     width: 100%;
