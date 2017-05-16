@@ -68,40 +68,24 @@ header {
   border-radius: 5px;
   padding: 12px 20px;
 }
-.mob_title {
-  background-image: url(../img/mob_header.png);
-  background-repeat: no-repeat;
-  background-position: top 30px center;
-  background-size: contain;
-  text-align: center;
-  padding: 60px 0;
-}
-
 .title {
-  padding: 170px 0;
+  padding: 185px 0;
   font-family: MuseoSansRounded-500-webfont;
   color: #333333;
   font-size: 44px;
 }
-@media (max-width: 991px) {
-  .mob_title {
-    font-size: 30px;
-    font-family: MuseoSansRounded-500-webfont;
-    color: #333333;
-  }
-}
-
-.title p, .mob_title p {
+.title p {
   color: #666666;
   font-size: 18px;
   font-family: MuseoSansRounded-500-webfont;
   margin: 0;
   padding-top: 15px;
+  width: 410px;
 }
 .reg {
-  padding: 40px 0;
+  padding: 40px 0 10px;
 }
-.title input, .mob_title input {
+.title input {
   color: #666666;
   font-size: 18px;
   font-family: MuseoSansRounded-300-webfont;
@@ -109,23 +93,36 @@ header {
   border-radius: 5px;
   border: 2px solid #cccccc;
 }
-.title button, .mob_title button {
-  color: white;
+.btn-primary {
   background-color: #4dccdb;
+  border-color: #4dccdb;
+  color: white;
+}
+.btn {
   border-radius: 5px;
   font-size: 18px;
   font-family: MuseoSansRounded-500-webfont;
-  padding: 15px 0;
+  padding: 19px 0;
   font-weight: bold;
-  border: solid #4dccdb;
+  border: 1px solid transparent;
 }
-.mob_img {
-  position: relative;
+@media (max-width: 991px) {
+  .title {
+    background-image: url(../img/mob_header.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    font-size: 30px;
+    padding: 150px 0;
+  }
+  .title p {
+    width: 100%;
+  }
 }
 .mob_img img {
   position: absolute;
   top: 70px;
-  right: -40px;
+  right: -25px;
 }
 main {
   background-color: white;
@@ -135,12 +132,6 @@ main {
   background-repeat: no-repeat;
   background-position: center;
   padding: 80px 0;
-}
-.mob_sponsor {
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  padding: 40px 0;
 }
 .sponsor1 {
   background-image: url(../img/sponsor1.png);
@@ -162,15 +153,8 @@ main .info {
   font-family: MuseoSansRounded-500-webfont;
   text-align: center;
   padding: 50px 15px;
-}
-@media (max-width: 991px) {
-  main .info {
-    font-size: 24px;
-    padding: 50px 36px;
-  }
-  .order p {
-    padding-top: 20px;
-  }
+  width: 375px;
+  margin: 0 auto;
 }
 main .data {
   font-size: 22px;
@@ -184,12 +168,28 @@ main .data {
   font-family: MuseoSansRounded-300-webfont;
 }
 @media (max-width: 991px) {
+  main .info {
+    font-size: 24px;
+    padding: 50px 36px;
+  }
+  .order p {
+    padding-top: 20px;
+  }
   .data span {
     font-size: 20px;
     font-weight: bold;
   }
   main .data {
     font-size: 24px;
+  }
+  .sponsor {
+    background-size: contain;
+    padding: 65px 0;
+  }
+}
+@media (max-width: 767px) {
+  .sponsor {
+    padding: 40px 0;
   }
 }
 .icon {
@@ -202,7 +202,6 @@ main .data {
 }
 .info_safe {
   background-image: url(../img/mine_safe.png);
-
 }
 .info_professional {
   background-image: url(../img/mine_professional.png);
@@ -338,14 +337,7 @@ footer {
   border: 1px solid #cccccc;
 }
 .form button {
-  color: white;
-  background-color: #4dccdb;
-  border-radius: 5px;
-  font-size: 18px;
-  font-family: MuseoSansRounded-500-webfont;
   padding: 11px 0;
-  font-weight: bold;
-  border: solid #4dccdb;
 }
 .form-text {
   padding: 17px 0;
